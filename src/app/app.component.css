@@ -1,0 +1,135 @@
+.header {
+    background-image: url("../assets/Group 140.png");
+    background-size: cover;
+
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+
+    inset: 25%;
+    bottom: 10%;
+
+    transform: translate(10px, 8px);
+    z-index: -1;
+
+    background: linear-gradient(131.76deg, #D686FA 14.63%, #6D37FF 85.16%);
+    filter: blur(100px);
+}
+
+.sec3 {position: relative}
+.sec3::before {
+    content: "";
+    position: absolute;
+
+    inset: 10%;
+    bottom: 5%;
+
+    transform: translate(10px, 8px);
+    z-index: -1;
+
+    background: linear-gradient(131.76deg, #6D37FF 14.63%, #D686FA 85.16%);
+    filter: blur(100px);
+    opacity: .4;
+}
+
+.btn-default {
+    padding: 10px;
+    padding-inline: 15px !important;
+
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.btn-active {
+    border: 0px; margin: 1px;
+    padding: 10px; padding-inline: 15px !important;
+    border-radius: 8px;
+    background: linear-gradient(131.76deg, #D686FA 14.63%, #6D37FF 85.16%);
+    outline: none;
+}
+
+.cards {
+    background: linear-gradient(131.76deg, #6D37FF 14.63%, #D686FA 85.16%);
+    padding: 100px;
+    border-radius: 30px;
+}
+
+.scroller {
+    overflow: hidden;
+    width: 1000px;
+
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, white, white, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 1%, white, white, transparent 99%);
+}
+
+.scroller-inner {
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translate(calc(0% - 7.5rem));
+    }
+    to {
+        transform: translate(calc(-50% - 10rem));
+    }
+}
+
+.pers-start {position: relative}
+.pers-start::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(131.76deg, #6D37FF 14.63%, #D686FA 85.16%);
+
+    width: 23rem; height:11.5rem;
+    border-radius: 25rem 25rem 0 0;
+    transform: rotate(-40deg);
+
+    left: -5.5rem; top: -0.5rem;
+    z-index: -1;
+}
+
+.pers-middle {position: relative}
+.pers-middle::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(131.76deg, #6D37FF 14.63%, #D686FA 85.16%);
+
+    width: 23rem; height:11.5rem;
+    border-radius: 25rem 25rem 0 0;
+
+    left: -2rem; top: -2rem;
+    z-index: -1;
+}
+
+.pers-end {position: relative}
+.pers-end::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(131.76deg, #D686FA 14.63%, #6D37FF 85.16%);
+
+    width: 23rem; height:11.5rem;
+    border-radius: 25rem 25rem 0 0;
+    transform: rotate(40deg);
+
+    left: 1.5rem; top: -0.5rem;
+    z-index: -1;
+}
+
+.pers::after {
+    content: "";
+    position: absolute;
+
+    inset: 10%;
+    top: -2rem;
+
+    transform: translate(10px, 8px);
+    z-index: -1;
+
+    background: linear-gradient(131.76deg, #D686FA 14.63%, #6D37FF 85.16%);
+    filter: blur(100px);
+}

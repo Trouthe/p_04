@@ -1,0 +1,14 @@
+.foot {position: relative;}
+.foot::before {
+    content: "";
+    position: absolute;
+
+    inset: 15%;
+
+    transform: translate(10px, 8px);
+    z-index: -1;
+
+    background: linear-gradient(131.76deg, #D686FA 14.63%, #6D37FF 85.16%);
+    filter: blur(100px);
+    opacity: .4;
+}

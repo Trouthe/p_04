@@ -1,0 +1,13 @@
+a {
+    border-bottom: transparent;
+    transition: border-bottom 0.1s;
+}
+a:hover:not(.active) {border-bottom: 2px solid white}
+.active {border-bottom: 2px solid white}
+
+button {
+    background: linear-gradient(131.76deg, #D686FA 14.63%, #6D37FF 85.16%);
+    padding-inline: 20px !important; padding: 10px;
+    border-radius: 25px;
+    font-weight: bold;
+}

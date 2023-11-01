@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../src/assets/fonts/Inter-VariableFont_slnt,wght.ttf") 
+        format('truetype');
+}
+
+@font-face {
+    font-family: 'Krona One';
+    src: url("../src/assets/fonts/KronaOne-Regular.ttf") 
+        format('truetype');
+}
+
+h1 {font-family: 'Krona One'; font-size: 75px; color: white;}
+h2 {font-family: 'Krona One'; font-size: 45px; color: white;}
+li, p, button {font-family: 'Inter'; color: white;}
+
+.mw {max-width: 1879px}
