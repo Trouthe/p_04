@@ -15,7 +15,22 @@ export class NavbarComponent {
     if (menuToggle && menu) {
       menuToggle.addEventListener('click', () => {
         menu.classList.toggle('hidden');
+        
+        this.toggleScrolling(); 
       });
     }
+  }
+
+  private isScrollingEnabled = true;
+
+  private toggleScrolling() {
+    if (this.isScrollingEnabled) {
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    }
+    this.isScrollingEnabled = !this.isScrollingEnabled;
   }
 }

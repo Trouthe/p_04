@@ -1,8 +1,8 @@
-<div class="bg-transparent flex flex-row justify-between items-center p-7 lg:px-32 text-white">
+<div class="flex flex-row justify-between items-center p-7 lg:px-32 text-white">
     <img src="../../assets/logo.png" alt="">
 
     <!-- Hamburger menu button -->
-    <button id="menuToggle" class="lg:hidden block px-3 py-2 rounded text-white relative z-30">
+    <button id="menuToggle" class="lg:hidden block px-3 py-2 rounded text-white relative z-30" >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4 6h16M4 12h16M4 18h16"></path>
@@ -10,23 +10,23 @@
     </button>
 
     <!-- Hidden menu -->
-    <ul id="menu" class=" lg:flex justify-between gap-20 
+    <ul id="menu" class="hidden lg:flex justify-between items-center gap-20 
     fixed lg:relative
     text-black lg:text-white
     bg-white lg:bg-transparent
-    w-full lg:w-auto
-    h-full lg:h-auto
-    left-0 bottom-0 z-20
+    w-screen lg:w-auto
+    h-screen lg:h-[6rem]
+    left-0 top-0 z-20
     py-7 px-7">
         <img src="../../assets/logo.png" class="lg:hidden invert mb-10">
-        <a class="mx-20 text-4xl lg:active" href="#"><li class="px-3">Home</li></a>
-        <a class="mx-20 text-4xl" href="#"><li class="px-3">Methodology</li></a>
-        <a class="mx-20 text-4xl" href="#"><li class="px-3">Result</li></a>
-        <a class="mx-20 text-4xl" href="#"><li class="px-3">Projects</li></a>
-        <a class="mx-20 text-4xl" href="#"><li class="px-3">Team</li></a>
+        <a class="mx-20 text-4xl lg:m-2 lg:text-2xl active" href="#"><li class="px-3">Home</li></a>
+        <a class="mx-20 text-4xl lg:m-2 lg:text-2xl" href="#"><li class="px-3">Methodology</li></a>
+        <a class="mx-20 text-4xl lg:m-2 lg:text-2xl" href="#"><li class="px-3">Result</li></a>
+        <a class="mx-20 text-4xl lg:m-2 lg:text-2xl" href="#"><li class="px-3">Projects</li></a>
+        <a class="mx-20 text-4xl lg:m-2 lg:text-2xl" href="#"><li class="px-3">Team</li></a>
 
-        <button class="lg:hidden">Contact Us</button>
+        <button class="lg:hidden text-white flex mx-auto">Contact Us</button>
     </ul>
 
-    <button class="hidden md:hidden lg:block">Contact Us</button>
+    <button class="hidden md:hidden lg:flex">Contact Us</button>
 </div>

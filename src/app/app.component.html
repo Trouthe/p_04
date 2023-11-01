@@ -1,7 +1,7 @@
 <body class="flex flex-col justify-center items-center mx-auto">
   <!-- Header -->
   <div class=" header flex flex-col justify-center items-center">
-  <app-navbar class="w-full"></app-navbar>
+  <app-navbar class="w-full z-20"></app-navbar>
 
     <h1 class="text-center text-4xl md:text-[75px] leading-tight">Go towards<br>unlimited <span class="text-black bg-white pb-5 pt-2 px-5 rounded-[75px] invisible md:visible">growth</span></h1>
     <h1 class="text-black text-4xl bg-white pb-5 pt-2 -mt-10 px-5 rounded-[75px] md:hidden">growth</h1>
@@ -13,55 +13,55 @@
 
   <!-- Body Sections -->
     <!-- Section One -->
-  <!-- <div class="flex flex-col justify-center items-center mt-32">
-    <h1>Our Model</h1>
-    <h2>Why Brands Work With Scales</h2>
-    <p class="text-[20px] mx-[29.25rem] text-center mt-5 font-light">Our biggest differentiator? We buy your inventory and you benefit from our acceleration technology and services at no fee</p>
-  </div> -->
+  <div class="flex flex-col justify-center text-center items-center mt-32">
+    <h1 class="text-5xl mb-5 lg:text-[75px]">Our Model</h1>
+    <h2 class="text-3xl lg:text-[45px]">Why Brands Work With Scales</h2>
+    <p class="lg:text-[20px] lg:mx-[29.25rem] mx-5 text-center text-white mt-5 font-light">Our biggest differentiator? We buy your inventory and you benefit from our acceleration technology and services at no fee</p>
+  </div>
 
   <!-- Section Two -->
     <!-- Cards -->
-  <div class="mx-40 mt-20">
+  <div class="lg:mx-40 mx-5 lg:mt-20 mt-10">
     <!-- Buttons -->
-    <!-- <div class="flex flex-row mx-52">
-      <h2 class="text-[20px] mr-5">Steps</h2>
-      <div class="flex flex-row gap-5 flex-wrap justify-between">
-        <button [ngClass]="btnStyle[0]" (click)="changeContent(0); changeState(0);" autofocus><span class="font-bold pr-2">01</span> We create marketing solutions</button>
-        <button [ngClass]="btnStyle[1]" (click)="changeContent(1); changeState(1);"><span class="font-bold pr-2">02</span> We buy your inventory</button>
-        <button [ngClass]="btnStyle[2]" (click)="changeContent(2); changeState(2);"><span class="font-bold pr-2">03</span> We study customer behavior</button>
-        <button [ngClass]="btnStyle[3]" (click)="changeContent(3); changeState(3);"><span class="font-bold pr-2">04</span> Building strategic plans</button>
-        <button [ngClass]="btnStyle[4]" (click)="changeContent(4); changeState(4);"><span class="font-bold pr-2">05</span> Doing logistics services</button>
-        <button [ngClass]="btnStyle[5]" (click)="changeContent(5); changeState(5);"><span class="font-bold pr-2">06</span> Expanding in the Guld countries</button>
+    <div class="flex text-white flex-col lg:flex-row lg:mx-52">
+      <h2 class="text-3xl mb-3 lg:text-[20px] mr-5 text-center">Steps</h2>
+      <div class="flex flex-row gap-5 flex-wrap lg:justify-between justify-center">
+        <button class="w-40 lg:w-auto" [ngClass]="btnStyle[0]" (click)="changeContent(0); changeState(0);" autofocus><span class="font-bold pr-2">01</span> We create marketing solutions</button>
+        <button class="w-40 lg:w-auto" [ngClass]="btnStyle[1]" (click)="changeContent(1); changeState(1);"><span class="font-bold pr-2">02</span> We buy your inventory</button>
+        <button class="w-40 lg:w-auto" [ngClass]="btnStyle[2]" (click)="changeContent(2); changeState(2);"><span class="font-bold pr-2">03</span> We study customer behavior</button>
+        <button class="w-40 lg:w-auto" [ngClass]="btnStyle[3]" (click)="changeContent(3); changeState(3);"><span class="font-bold pr-2">04</span> Building strategic plans</button>
+        <button class="w-40 lg:w-auto" [ngClass]="btnStyle[4]" (click)="changeContent(4); changeState(4);"><span class="font-bold pr-2">05</span> Doing logistics services</button>
+        <button class="w-40 lg:w-auto" [ngClass]="btnStyle[5]" (click)="changeContent(5); changeState(5);"><span class="font-bold pr-2">06</span> Expanding in the Guld countries</button>
       </div>
-    </div> -->
+    </div>
 
     <!-- Cards -->
-    <!-- <div class="cards flex flex-col my-14 mx-40">
-      <h2>{{contentSets[currentContentIndex].title}}</h2>
-      <p class=" mt-5">{{ contentSets[currentContentIndex].description }}</p>
-    </div> -->
+    <div class="text-white cards flex flex-col my-14 lg:p-[100px] p-10 lg:mx-40">
+      <h2 class="lg:text-[45px] text-4xl">{{contentSets[currentContentIndex].title}}</h2>
+      <p class="mt-5">{{ contentSets[currentContentIndex].description }}</p>
+    </div>
   </div>
 
   <!-- Section Three -->
-  <!-- <div class="sec3 w-full px-40 py-24 mt-20 bg-[#221D2F]">
-    <div class="flex flex-row mw mx-auto justify-center items-center">
-      <div class="w-[25%] pr-20">
+  <div class="text-white sec3 w-full lg:px-40 p-10 lg:py-24 mt-20 bg-[#221D2F]">
+    <div class="flex flex-col lg:flex-row lg:mw mx-auto justify-center items-center">
+      <div class="lg:w-[25%] lg:pr-20">
         <h2>Our Results</h2>
         <p class="text-[20px]">Brands are experiencing unprecedented growth after joining the Scales Accelerator</p>
       </div>
-      <div class="w-[50%] flex flex-row relative">
-        <img src="../assets/Group 193.png" class="relative -top-24">
-        <img src="../assets/Group 192.png" class="absolute left-[22.75rem] top-28">
+      <div class="lg:w-[50%] flex flex-col lg:flex-row relative">
+        <img src="../assets/Group 193.png" class="lg:relative lg:-top-24">
+        <img src="../assets/Group 192.png" class="lg:absolute lg:left-[22.75rem] lg:top-24">
       </div>
     </div>
-  </div> -->
+  </div>
 
   <!-- Section Four -->
-  <div class="w-full flex flex-col justify-center items-center px-40 py-24 mt-20">
+  <div class="w-full flex flex-col justify-center overflow-hidden items-center lg:px-40 lg:py-24 mt-20">
     <!-- Customers -->
-    <!-- <h1>Our Customers</h1> -->
+    <h1 class="lg:text-[75px] text-[2.7rem] text-center">Our Customers</h1>
 
-    <!-- <div class="scroller my-10">
+    <div class="scroller my-10">
       <div class="flex flex-nowrap justify-center scroller-inner gap-20 ">
         <img src="../assets/Company logo.png" alt="" class="h-9 my-auto">
         <img src="../assets/Company logo 2.png" alt="" class="h-5 my-auto ">
@@ -77,37 +77,37 @@
         <img src="../assets/Company logo 5.png" alt="" class="">
         <img src="../assets/Company logo 6.png" alt="" class="h-6 my-auto ">
       </div>
-    </div> -->
+    </div>
 
     <!-- Team -->
-    <!-- <div class="mt-10 flex flex-col justify-center items-center">
+    <div class="mt-10 mb-40 text-white flex flex-col justify-center items-center">
       <h2>Our Team</h2>
 
-      <div class="flex flex-row gap-32 mt-20 text-center">
-        <div class="pers pers-start">
+      <div class="flex flex-col lg:flex-row lg:gap-32 mt-20 text-center">
+        <div class="pers pers-start scale-[.85] lg:scale-100">
           <img src="../assets/person (2).png">
 
           <h2 style="font-size: 30px;" class="mt-5">Mr. Nehera</h2>
           <p>Founder & Chairman</p>
         </div>
 
-        <div class="pers pers-middle">
+        <div class="pers pers-middle scale-[.85] lg:scale-100">
           <img src="../assets/person (3).png">
 
           <h2 style="font-size: 30px;" class="mt-5">Mr. Hurshed</h2>
           <p>Board Member</p>
         </div>
 
-        <div class="pers pers-end">
+        <div class="pers pers-end scale-[.85] lg:scale-100">
           <img src="../assets/person (1).png">
 
           <h2 style="font-size: 30px;" class="mt-5">Mr. harmis</h2>
           <p>Co-Founder</p>
         </div>
       </div>
-    </div> -->
+    </div>
 
   </div>
 </body>
 
-<!-- <app-footer></app-footer> -->
+<app-footer></app-footer>
