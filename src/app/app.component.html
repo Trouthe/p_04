@@ -3,25 +3,27 @@
   <div class=" header flex flex-col justify-center items-center">
   <app-navbar class="w-full"></app-navbar>
 
-    <h1 class="text-center">Go towards<br>unlimited <span class="text-black bg-white pb-5 pt-2 px-5 rounded-[75px]">growth</span></h1>
-    <p class="text-[20px] font-light mx-[25%] mt-10 text-center">Scales is the first e-commerce accelerator in the region, with professional management that takes your company towards accelerated growth, spreading your brand, marketing it, and selling across the Gulf countries through e-commerce markets.</p>
+    <h1 class="text-center text-4xl md:text-[75px] leading-tight">Go towards<br>unlimited <span class="text-black bg-white pb-5 pt-2 px-5 rounded-[75px] invisible md:visible">growth</span></h1>
+    <h1 class="text-black text-4xl bg-white pb-5 pt-2 -mt-10 px-5 rounded-[75px] md:hidden">growth</h1>
+
+    <p class="text-white text-[20px] font-light mx-4 md:mx-[25%] mt-10 text-center">Scales is the first e-commerce accelerator in the region, with professional management that takes your company towards accelerated growth, spreading your brand, marketing it, and selling across the Gulf countries through e-commerce markets.</p>
 
     <img src="../assets/57590dk-[Converted] 1.png" class="mt-10 grayscale">
   </div>
 
   <!-- Body Sections -->
     <!-- Section One -->
-  <div class="flex flex-col justify-center items-center mt-32">
+  <!-- <div class="flex flex-col justify-center items-center mt-32">
     <h1>Our Model</h1>
     <h2>Why Brands Work With Scales</h2>
     <p class="text-[20px] mx-[29.25rem] text-center mt-5 font-light">Our biggest differentiator? We buy your inventory and you benefit from our acceleration technology and services at no fee</p>
-  </div>
+  </div> -->
 
   <!-- Section Two -->
     <!-- Cards -->
   <div class="mx-40 mt-20">
     <!-- Buttons -->
-    <div class="flex flex-row mx-52">
+    <!-- <div class="flex flex-row mx-52">
       <h2 class="text-[20px] mr-5">Steps</h2>
       <div class="flex flex-row gap-5 flex-wrap justify-between">
         <button [ngClass]="btnStyle[0]" (click)="changeContent(0); changeState(0);" autofocus><span class="font-bold pr-2">01</span> We create marketing solutions</button>
@@ -31,17 +33,17 @@
         <button [ngClass]="btnStyle[4]" (click)="changeContent(4); changeState(4);"><span class="font-bold pr-2">05</span> Doing logistics services</button>
         <button [ngClass]="btnStyle[5]" (click)="changeContent(5); changeState(5);"><span class="font-bold pr-2">06</span> Expanding in the Guld countries</button>
       </div>
-    </div>
+    </div> -->
 
     <!-- Cards -->
-    <div class="cards flex flex-col my-14 mx-40">
+    <!-- <div class="cards flex flex-col my-14 mx-40">
       <h2>{{contentSets[currentContentIndex].title}}</h2>
       <p class=" mt-5">{{ contentSets[currentContentIndex].description }}</p>
-    </div>
+    </div> -->
   </div>
 
   <!-- Section Three -->
-  <div class="sec3 w-full px-40 py-24 mt-20 bg-[#221D2F]">
+  <!-- <div class="sec3 w-full px-40 py-24 mt-20 bg-[#221D2F]">
     <div class="flex flex-row mw mx-auto justify-center items-center">
       <div class="w-[25%] pr-20">
         <h2>Our Results</h2>
@@ -52,14 +54,14 @@
         <img src="../assets/Group 192.png" class="absolute left-[22.75rem] top-28">
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Section Four -->
   <div class="w-full flex flex-col justify-center items-center px-40 py-24 mt-20">
     <!-- Customers -->
-    <h1>Our Customers</h1>
+    <!-- <h1>Our Customers</h1> -->
 
-    <div class="scroller my-10">
+    <!-- <div class="scroller my-10">
       <div class="flex flex-nowrap justify-center scroller-inner gap-20 ">
         <img src="../assets/Company logo.png" alt="" class="h-9 my-auto">
         <img src="../assets/Company logo 2.png" alt="" class="h-5 my-auto ">
@@ -75,10 +77,10 @@
         <img src="../assets/Company logo 5.png" alt="" class="">
         <img src="../assets/Company logo 6.png" alt="" class="h-6 my-auto ">
       </div>
-    </div>
+    </div> -->
 
     <!-- Team -->
-    <div class="mt-10 flex flex-col justify-center items-center">
+    <!-- <div class="mt-10 flex flex-col justify-center items-center">
       <h2>Our Team</h2>
 
       <div class="flex flex-row gap-32 mt-20 text-center">
@@ -103,8 +105,9 @@
           <p>Co-Founder</p>
         </div>
       </div>
-    </div>
+    </div> -->
+
   </div>
 </body>
 
-<app-footer></app-footer>
+<!-- <app-footer></app-footer> -->

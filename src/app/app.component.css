@@ -1,6 +1,7 @@
 .header {
     background-image: url("../assets/Group 140.png");
     background-size: cover;
+    background-position: center center;
 
     position: relative;
 }
